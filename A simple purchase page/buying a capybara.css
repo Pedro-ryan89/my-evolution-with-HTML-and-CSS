@@ -1,0 +1,116 @@
+
+     nav{
+        background-color: bisque;
+        border: solid;
+        border-radius: 15px;
+        backdrop-flter:blur(20px);      
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 20px;
+        
+    }
+    nav ul li a{
+        position: relative;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    a:after{
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+        
+     }
+     a:hover::after{
+         width: 100%;
+
+     }
+  
+    .logo{
+        font-size: 20px;
+    }
+    
+    span{
+        color: brown;
+    }
+    
+    .shirt{
+        color: black;
+        font-size: 55px;
+        font-weight: normal;;
+     }
+     
+     .capshirt{
+         max-width:100%;
+         max-height: 100%;
+         border-radius: 10%;
+         display: block;
+         margin-right: auto;
+         margin-left: auto;
+     }
+     .stock{
+         font-size: 35px;
+         font-weight: normal;
+         background-color: whitesmoke;
+         width: 250px;
+         border: solid;
+         border-radius: 10px;
+         
+
+     }
+     .buy{
+         background-color: gold;
+         color: black;
+         border: none;
+         border-radius: 15px;
+         width: 150px;
+         height: 35px;
+         cursor: pointer;
+         transition: box-shadow 0.15s;
+         font-weight: bold;
+         margin-right: 10px;
+     }
+     .cart{
+         background-color: orange;
+         color: black;
+         border: none;
+         border-radius: 15px;
+         width: 150px;
+         height: 35px;
+         cursor: pointer;
+         transition: box-shadow 0.15s;
+         font-weight: bold;
+         
+     }
+     
+    .buy:hover{
+        box-shadow: 1px 1px 5px black;
+    }
+    
+    .cart:hover{
+        box-shadow: 1px 1px 5px black;
+    }
+    
+    .price{
+        font-size: 25px;
+    }
+    .size{
+        display: flex;
+        width: 150px;
+        height: 25px;
+        border: solid;
+    }
